@@ -34,7 +34,7 @@ const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   addEventListener("mousemove", (e) => {
     mx = e.clientX; my = e.clientY;
-    dot.style.transform = `translate(${mx}px, ${my}px) translate(-50%,-50%)`;
+    dot.style.transform = `translate(${mx}px, ${my}px)`; // dart tip = cursor point
   });
   (function follow() {
     rx += (mx - rx) * 0.16;
@@ -149,7 +149,7 @@ const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     "I fine-tune Transformers",
     "I build RAG pipelines",
     "I ship MLOps, not notebooks",
-    "200+ DSA problems deep",
+    "300+ DSA problems deep",
   ];
   let pi = 0, ci = 0, deleting = false;
   function type() {

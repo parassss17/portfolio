@@ -66,9 +66,12 @@ em { font-style: italic; color: var(--accent-2); }
   transform: translate(-50%, -50%);
 }
 .cursor-dot {
-  width: 7px; height: 7px;
+  width: 22px; height: 22px;
+  border-radius: 0;
   background: var(--accent);
-  mix-blend-mode: difference;
+  /* pointed dart — tip sits at the exact cursor position (top-left) */
+  clip-path: polygon(0 0, 100% 36%, 50% 53%, 36% 100%);
+  filter: drop-shadow(0 0 6px rgba(199, 242, 76, 0.5));
 }
 .cursor-ring {
   width: 36px; height: 36px;
