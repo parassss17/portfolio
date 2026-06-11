@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paras Beniwal — ML Engineer & Builder</title>
+  <meta name="description" content="Portfolio of Paras Beniwal — Machine Learning engineer, B.Tech Software Engineering @ DTU. Transformers, RAG, MLOps." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&family=Space+Grotesk:wght@300..700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- preloader -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-inner">
+      <span class="preloader-glyph">[</span>
+      <span class="preloader-text" id="preloaderText">initializing</span>
+      <span class="preloader-glyph">]</span>
+    </div>
+    <div class="preloader-bar"><span id="preloaderBar"></span></div>
+  </div>
+
+  <!-- custom cursor -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"><span class="cursor-label" id="cursorLabel"></span></div>
+
+  <!-- scroll progress -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- grain overlay -->
+  <div class="grain"></div>
+
+  <!-- nav -->
+  <nav class="nav" id="nav">
+    <a class="nav-logo" href="#top" data-cursor="hover">PB<span class="accent">.</span></a>
+    <div class="nav-links">
+      <a href="#about" data-cursor="hover"><span class="mono accent">01.</span> About</a>
+      <a href="#experience" data-cursor="hover"><span class="mono accent">02.</span> Experience</a>
+      <a href="#projects" data-cursor="hover"><span class="mono accent">03.</span> Projects</a>
+      <a href="#skills" data-cursor="hover"><span class="mono accent">04.</span> Skills</a>
+      <a href="#contact" data-cursor="hover"><span class="mono accent">05.</span> Contact</a>
+    </div>
+    <a class="nav-cta magnetic" href="mailto:work4paras@gmail.com" data-cursor="hover">Hire Me</a>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <header class="hero" id="top">
+    <canvas id="neuralCanvas"></canvas>
+    <div class="hero-content">
+      <p class="hero-eyebrow mono reveal-up">Hello world, I'm</p>
+      <h1 class="hero-name" aria-label="Paras Beniwal">
+        <span class="line"><span class="word" data-text="PARAS">PARAS</span></span>
+        <span class="line"><span class="word outline" data-text="BENIWAL">BENIWAL</span></span>
+      </h1>
+      <div class="hero-roles mono">
+        <span class="accent">&gt;</span>&nbsp;<span id="typewriter"></span><span class="caret">▌</span>
+      </div>
+      <p class="hero-sub reveal-up">
+        I train models, build pipelines, and ship them live.
+        B.Tech Software Engineering @ <strong>Delhi Technological University</strong> · 2026.
+      </p>
+      <div class="hero-actions reveal-up">
+        <a class="btn btn-primary magnetic" href="#projects" data-cursor="hover">See my work ↓</a>
+        <a class="btn btn-ghost magnetic" href="https://github.com/parassss17" target="_blank" rel="noopener" data-cursor="hover">GitHub ↗</a>
+      </div>
+    </div>
+    <div class="hero-hint mono">tip: move your mouse — the neurons follow you</div>
+    <div class="scroll-cue" aria-hidden="true">
+      <div class="scroll-cue-track"><div class="scroll-cue-dot"></div></div>
+      <span class="mono">scroll</span>
+    </div>
+  </header>
+
+  <!-- marquee -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track" id="marqueeTrack">
+      <span>TRANSFORMERS ✦ RAG PIPELINES ✦ MLOPS ✦ DEEP LEARNING ✦ RECOMMENDERS ✦ FORECASTING ✦&nbsp;</span>
+      <span>TRANSFORMERS ✦ RAG PIPELINES ✦ MLOPS ✦ DEEP LEARNING ✦ RECOMMENDERS ✦ FORECASTING ✦&nbsp;</span>
+    </div>
+  </div>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="section-head">
+      <span class="section-num mono">01</span>
+      <h2 class="section-title"><span class="title-mask"><span>About Me</span></span></h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text reveal-up">
+        <p class="big-statement">
+          I turn <em>messy data</em> into <em>working products</em> — from a stock-forecasting
+          Transformer that cut RMSE by <span class="stat-inline" data-count="72">0</span>% to a
+          self-improving spam detector with one-click retraining.
+        </p>
+        <p>
+          Currently in my final year of B.Tech (Software Engineering) at DTU, New Delhi.
+          I like the full arc of machine learning: framing the problem, wrangling the data,
+          benchmarking honestly, and deploying something people can actually click on.
+          Every project below has a <strong>live demo</strong> — I don't ship notebooks, I ship apps.
+        </p>
+        <div class="counters">
+          <div class="counter reveal-up"><span class="counter-num" data-count="200">0</span><span class="counter-plus">+</span><p>DSA problems solved</p></div>
+          <div class="counter reveal-up"><span class="counter-num" data-count="4">0</span><span class="counter-plus"></span><p>ML apps deployed live</p></div>
+          <div class="counter reveal-up"><span class="counter-num" data-count="1414">0</span><span class="counter-plus"></span><p>LeetCode contest rating</p></div>
+          <div class="counter reveal-up"><span class="counter-num" data-count="590">0</span><span class="counter-plus"></span><p>failures indexed in my RAG</p></div>
+        </div>
+      </div>
+      <div class="about-side reveal-up">
+        <div class="edu-card tilt" data-cursor="hover">
+          <h3 class="mono accent">// education</h3>
+          <div class="edu-item">
+            <strong>B.Tech — Software Engineering</strong>
+            <span>Delhi Technological University</span>
+            <span class="mono dim">2022 — 2026 · CGPA 7.09</span>
+          </div>
+          <div class="edu-item">
+            <strong>Class XII · CBSE</strong>
+            <span>Sri Guru Harkrishan Sr. Sec. School, Chandigarh</span>
+            <span class="mono dim">2022 · 80.2%</span>
+          </div>
+          <div class="edu-item">
+            <strong>Class X · CBSE</strong>
+            <span>DAV Public School, Naraingarh</span>
+            <span class="mono dim">2020 · 82%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section class="section" id="experience">
+    <div class="section-head">
+      <span class="section-num mono">02</span>
+      <h2 class="section-title"><span class="title-mask"><span>Experience</span></span></h2>
+    </div>
+    <div class="xp-card reveal-up tilt" data-cursor="hover">
+      <div class="xp-top">
+        <div>
+          <h3>Machine Learning Intern</h3>
+          <p class="xp-org accent">EX Squared Solutions India Pvt. Ltd.</p>
+        </div>
+        <span class="xp-date mono">Jun 2025 — Aug 2025</span>
+      </div>
+      <ul class="xp-points">
+        <li>Worked on <strong>HomLuv</strong>, BDX's visual home-discovery platform; built a working prototype of its core loop — <em>like/dislike home photos → style profile → builder match</em> — on a public sample dataset.</li>
+        <li>Used a <strong>pretrained CNN</strong> (transfer learning) to encode photos into style vectors; built a <strong>content-based recommender</strong> (cosine similarity over liked photos) with <strong>KMeans</strong> builder grouping and a logistic-regression like/dislike classifier.</li>
+      </ul>
+      <div class="xp-links">
+        <a href="https://github.com/parassss17/homluv-preference-engine" target="_blank" rel="noopener" data-cursor="view">GitHub ↗</a>
+        <a href="https://huggingface.co/spaces/parassss17/homluv-preference-engine" target="_blank" rel="noopener" data-cursor="view">Live Demo ↗</a>
+      </div>
+    </div>
+
+    <!-- engagement: homluv-style rating -->
+    <div class="swipe-widget reveal-up">
+      <p class="mono dim">⌁ interactive — the HomLuv loop, but for this portfolio:</p>
+      <div class="swipe-card" id="swipeCard">
+        <p id="swipeQuestion">Do you like this portfolio so far?</p>
+        <div class="swipe-actions">
+          <button class="swipe-btn nope magnetic" id="swipeNope" data-cursor="hover">✕</button>
+          <button class="swipe-btn like magnetic" id="swipeLike" data-cursor="hover">♥</button>
+        </div>
+      </div>
+      <p class="swipe-result mono" id="swipeResult"></p>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS (horizontal scroll) ============ -->
+  <section class="projects-section" id="projects">
+    <div class="section-head projects-head">
+      <span class="section-num mono">03</span>
+      <h2 class="section-title"><span class="title-mask"><span>Selected Projects</span></span></h2>
+      <p class="mono dim projects-hint">↓ keep scrolling — this gallery moves sideways</p>
+    </div>
+    <div class="hscroll-wrap" id="hscrollWrap">
+      <div class="hscroll-track" id="hscrollTrack">
+
+        <article class="project-card tilt" data-cursor="view">
+          <span class="project-index mono">001</span>
+          <div class="project-tags mono"><span>PyTorch</span><span>Darts</span><span>Transformers</span><span>Plotly</span></div>
+          <h3>AlphaCast</h3>
+          <p class="project-tag-line">Sector-Augmented Transformers for Stock Forecasting</p>
+          <p class="project-desc">
+            Interactive Streamlit pipeline forecasting 7-day stock prices, anchoring each stock to its
+            most-correlated sector ETF. Benchmarked a Temporal Fusion Transformer vs. LSTM on 30+ years of
+            AAPL data — the Transformer cut <strong>RMSE 72%</strong> ($40.98 → $11.43) with ~45% fewer parameters.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/parassss17/alphacast" target="_blank" rel="noopener" data-cursor="hover">Code ↗</a>
+            <a href="https://huggingface.co/spaces/parassss17/alphacast" target="_blank" rel="noopener" data-cursor="hover">Live ↗</a>
+          </div>
+          <div class="project-glow"></div>
+        </article>
+
+        <article class="project-card tilt" data-cursor="view">
+          <span class="project-index mono">002</span>
+          <div class="project-tags mono"><span>LangChain</span><span>FAISS</span><span>Groq</span><span>MiniLM</span></div>
+          <h3>Premortem</h3>
+          <p class="project-tag-line">RAG over 590 Documented Project Failures</p>
+          <p class="project-desc">
+            RAG pipeline over failures from Hacker News, Failory & Wikipedia — embedded with
+            sentence-transformers into FAISS, clustered into failure modes via Llama-3.3-70B.
+            Evaluated on a 30-query set: <strong>Recall@5 = 0.70 · Recall@10 = 0.83 · MRR = 0.59</strong>.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/parassss17/premortem" target="_blank" rel="noopener" data-cursor="hover">Code ↗</a>
+            <a href="https://huggingface.co/spaces/parassss17/premortem" target="_blank" rel="noopener" data-cursor="hover">Live ↗</a>
+          </div>
+          <div class="project-glow"></div>
+        </article>
+
+        <article class="project-card tilt" data-cursor="view">
+          <span class="project-index mono">003</span>
+          <div class="project-tags mono"><span>Scikit-learn</span><span>NLTK</span><span>OCR</span><span>MLOps</span></div>
+          <h3>Spam Detector</h3>
+          <p class="project-tag-line">Self-Improving Classifier + MLOps Pipeline</p>
+          <p class="project-desc">
+            Multi-page Streamlit app classifying SMS spam from text <em>and images</em> (via OCR).
+            One-click <strong>MLOps retraining pipeline</strong> for continuous learning from user-reported
+            errors, with a live Plotly feedback dashboard.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/parassss17/spam_detector" target="_blank" rel="noopener" data-cursor="hover">Code ↗</a>
+            <a href="https://spamdetector-akety3b7ss3wepndt3infh.streamlit.app" target="_blank" rel="noopener" data-cursor="hover">Live ↗</a>
+          </div>
+          <div class="project-glow"></div>
+        </article>
+
+        <article class="project-card tilt" data-cursor="view">
+          <span class="project-index mono">004</span>
+          <div class="project-tags mono"><span>CNN</span><span>KMeans</span><span>Recommenders</span></div>
+          <h3>HomLuv Engine</h3>
+          <p class="project-tag-line">Visual Preference → Builder Match Prototype</p>
+          <p class="project-desc">
+            The internship prototype, shipped publicly: CNN style vectors from home photos, cosine-similarity
+            content recommender, KMeans builder grouping and a like/dislike classifier — the full
+            swipe-to-match loop, live.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/parassss17/homluv-preference-engine" target="_blank" rel="noopener" data-cursor="hover">Code ↗</a>
+            <a href="https://huggingface.co/spaces/parassss17/homluv-preference-engine" target="_blank" rel="noopener" data-cursor="hover">Live ↗</a>
+          </div>
+          <div class="project-glow"></div>
+        </article>
+
+        <article class="project-card project-card-cta" data-cursor="view">
+          <h3>More on<br/>GitHub ↗</h3>
+          <a class="card-cover-link" href="https://github.com/parassss17" target="_blank" rel="noopener" aria-label="GitHub profile"></a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="section" id="skills">
+    <div class="section-head">
+      <span class="section-num mono">04</span>
+      <h2 class="section-title"><span class="title-mask"><span>Skills & Arsenal</span></span></h2>
+    </div>
+    <p class="mono dim reveal-up" style="margin-bottom:1.5rem">⌁ hover the chips — they're alive</p>
+    <div class="skills-cloud reveal-up" id="skillsCloud">
+      <span class="chip chip-lg">Python</span><span class="chip chip-lg">PyTorch</span><span class="chip chip-lg">C/C++</span>
+      <span class="chip">JavaScript</span><span class="chip">SQL</span><span class="chip">HTML/CSS</span>
+      <span class="chip chip-lg">Scikit-learn</span><span class="chip">LangChain</span><span class="chip">FAISS</span>
+      <span class="chip">Pandas</span><span class="chip">NumPy</span><span class="chip">NLTK</span>
+      <span class="chip">Plotly</span><span class="chip">Seaborn</span><span class="chip">Matplotlib</span>
+      <span class="chip">Streamlit</span><span class="chip">Darts</span><span class="chip">Git/GitHub</span>
+      <span class="chip">Power BI</span><span class="chip">Tableau</span><span class="chip">Jupyter</span>
+      <span class="chip">Prompt Engineering</span><span class="chip">Data Analytics</span>
+      <span class="chip">OOP</span><span class="chip">OS</span><span class="chip">DBMS</span><span class="chip">Computer Networks</span>
+    </div>
+
+    <div class="achievements reveal-up">
+      <h3 class="mono accent">// achievements</h3>
+      <ul class="ach-list">
+        <li><strong>200+ DSA problems</strong> across <a href="https://leetcode.com/u/parasssss/" target="_blank" rel="noopener" data-cursor="hover">LeetCode</a>, <a href="https://www.geeksforgeeks.org/user/paras1717/" target="_blank" rel="noopener" data-cursor="hover">GeeksforGeeks</a> & Code360 · contest rating <strong>1414</strong></li>
+        <li>Certifications: Ethical Hacking (zSecurity) · C++ Excellence · Web Dev (WISSENAIRE, IIT Bhubaneswar) · Full-Stack Web Dev</li>
+        <li>Mentor, <strong>Desh Ke Mentor</strong> initiative (2023) · <strong>Event Head, Rotaract Society</strong> — led blood-donation camps & community drives</li>
+        <li>Error 404 Debugging Contest @ INVICTUS, DTU's annual tech fest</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <footer class="contact" id="contact">
+    <div class="section-head">
+      <span class="section-num mono">05</span>
+      <h2 class="section-title"><span class="title-mask"><span>Get In Touch</span></span></h2>
+    </div>
+    <p class="contact-line reveal-up">Have a role, an idea, or a dataset that needs taming?</p>
+    <a class="contact-mail magnetic" href="mailto:work4paras@gmail.com" data-cursor="hover">work4paras@gmail.com</a>
+    <div class="contact-socials reveal-up">
+      <a class="magnetic" href="https://github.com/parassss17" target="_blank" rel="noopener" data-cursor="hover">GitHub</a>
+      <a class="magnetic" href="https://www.linkedin.com/in/paras-beniwal-353b73261" target="_blank" rel="noopener" data-cursor="hover">LinkedIn</a>
+      <a class="magnetic" href="https://leetcode.com/u/parasssss/" target="_blank" rel="noopener" data-cursor="hover">LeetCode</a>
+      <a class="magnetic" href="tel:+919050342252" data-cursor="hover">+91 90503 42252</a>
+    </div>
+    <p class="footer-note mono">designed & built by Paras Beniwal · <span id="year"></span><br/>
+      <span class="dim">psst — try the Konami code (↑↑↓↓←→←→BA)</span></p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
