@@ -168,7 +168,8 @@ em { font-style: italic; color: var(--accent-2); }
 .hero-eyebrow { color: var(--accent); font-size: 0.95rem; margin-bottom: 1rem; }
 .hero-name {
   font-family: var(--font-display);
-  font-size: clamp(3.2rem, 11vw, 9.5rem);
+  /* cap ≤8.75rem: BENIWAL is ~7.71em wide and must fit the 1100px hero-content */
+  font-size: clamp(3.2rem, 11vw, 8.75rem);
   font-weight: 800;
   line-height: 0.95;
   letter-spacing: -0.02em;
