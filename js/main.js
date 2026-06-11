@@ -99,6 +99,14 @@ const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   canvas.parentElement.addEventListener("mouseleave", () => {
     mouse.x = mouse.y = -9999;
   });
+  canvas.parentElement.addEventListener("touchmove", (e) => {
+    const r = canvas.getBoundingClientRect();
+    mouse.x = e.touches[0].clientX - r.left;
+    mouse.y = e.touches[0].clientY - r.top;
+  }, { passive: true });
+  canvas.parentElement.addEventListener("touchend", () => {
+    mouse.x = mouse.y = -9999;
+  });
 
   function frame() {
     ctx.clearRect(0, 0, W, H);

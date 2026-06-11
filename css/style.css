@@ -458,6 +458,46 @@ em { font-style: italic; color: var(--accent-2); }
 .contact-socials a:hover { color: var(--accent); }
 .footer-note { margin-top: 5rem; color: var(--dim); font-size: 0.75rem; line-height: 2; }
 
+/* ============ mobile (≤600px) — desktop rules untouched ============ */
+@media (max-width: 600px) {
+  .hero { padding: 0 5vw; }
+  .hero-name { font-size: 11vw; }
+  .hero-name .outline { -webkit-text-stroke-width: 1.2px; }
+  .hero-sub { font-size: 0.95rem; }
+  .hero-actions { gap: 0.7rem; margin-top: 1.8rem; }
+  .btn { padding: 0.8rem 1.4rem; font-size: 0.8rem; }
+  .hero-hint { display: none; } /* mouse tip is meaningless on touch */
+  .scroll-cue { right: 5vw; bottom: 1.4rem; }
+
+  .nav { padding: 0.9rem 5vw; }
+  .nav-cta { padding: 0.45rem 0.95rem; font-size: 0.72rem; }
+
+  .section { padding: 5.5rem 5vw; }
+  .section-head { margin-bottom: 2.4rem; gap: 0.8rem; }
+  .about-grid { gap: 2.5rem; }
+  .counters { gap: 0.8rem; margin-top: 2rem; }
+  .counter { padding: 1.1rem 1rem; }
+  .counter-num, .counter-plus { font-size: 1.7rem; }
+  .edu-card { padding: 1.5rem; }
+
+  .xp-card { padding: 1.5rem; }
+  .xp-top h3 { font-size: 1.25rem; }
+  .swipe-card { padding: 1.5rem 1.2rem; width: 100%; }
+  .swipe-btn { width: 52px; height: 52px; }
+
+  .projects-section { padding-top: 5.5rem; }
+  .projects-head { padding: 0 5vw; }
+  .hscroll-track { gap: 1.2rem; padding: 1.5rem 5vw 3rem; }
+  .project-card { padding: 1.6rem; width: 84vw; }
+  .project-index { margin-bottom: 1rem; }
+  .project-desc { font-size: 0.9rem; }
+
+  .contact { padding: 5.5rem 5vw 3rem; }
+  .contact-mail { -webkit-text-stroke-width: 1px; }
+  .contact-socials { gap: 1.2rem; }
+  .footer-note { margin-top: 3rem; }
+}
+
 /* konami party mode */
 body.party { animation: hue 3s linear infinite; }
 @keyframes hue { to { filter: hue-rotate(360deg); } }
